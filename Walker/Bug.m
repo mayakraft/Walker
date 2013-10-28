@@ -18,18 +18,19 @@
 @implementation Bug
 
 -(id)init{
-    self = [super initWithTexture:nil color:[UIColor greenColor] size:CGSizeMake(3, 3)];
+    self = [super initWithTexture:nil color:[UIColor yellowColor] size:CGSizeMake(3, 3)];
     if(self){
-        tx = arc4random()%100;
-        ty = arc4random()%100+100;
+        tx = arc4random()%100/100.0;
+        ty = tx+arc4random()%100/100.0;
         STEP = .02;
     }
     return self;
 }
 
 -(void) increment{
-    self.position = CGPointMake(noise1(tx)*.02*self.scene.size.width + self.position.x, noise1(ty)*.02*self.scene.size.height + self.position.y);
+    self.position = CGPointMake(noise1(tx)*self.scene.size.width + self.scene.size.width/2.0,
+                                noise1(ty)*self.scene.size.height + self.scene.size.height/2.0);
     tx+=STEP;
-    ty+=STEP;
+    ty-=STEP;
 }
 @end

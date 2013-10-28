@@ -28,6 +28,8 @@
 		D5E2DA79181AE9C7007ECBAA /* noise.c in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA78181AE9C6007ECBAA /* noise.c */; };
 		D5E2DA81181EDD26007ECBAA /* Bug.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA80181EDD26007ECBAA /* Bug.m */; };
 		D5E2DA90181EE5C2007ECBAA /* Dragonfly.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */; };
+		D5E2DA94181F2470007ECBAA /* Explorer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA93181F2470007ECBAA /* Explorer.m */; };
+		D5E2DA97181F2669007ECBAA /* Adventurer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA96181F2669007ECBAA /* Adventurer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragonfly.h; sourceTree = "<group>"; };
 		D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragonfly.m; sourceTree = "<group>"; };
 		D5E2DA91181EE8AB007ECBAA /* noise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = noise.h; sourceTree = "<group>"; };
+		D5E2DA92181F2470007ECBAA /* Explorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Explorer.h; sourceTree = "<group>"; };
+		D5E2DA93181F2470007ECBAA /* Explorer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Explorer.m; sourceTree = "<group>"; };
+		D5E2DA95181F2669007ECBAA /* Adventurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adventurer.h; sourceTree = "<group>"; };
+		D5E2DA96181F2669007ECBAA /* Adventurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adventurer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +146,14 @@
 				D539EFE91819D8A6002CF2A2 /* ViewController.m */,
 				D539EFEB1819D8A6002CF2A2 /* MyScene.h */,
 				D539EFEC1819D8A6002CF2A2 /* MyScene.m */,
-				D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */,
-				D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */,
 				D5E2DA7F181EDD26007ECBAA /* Bug.h */,
 				D5E2DA80181EDD26007ECBAA /* Bug.m */,
+				D5E2DA92181F2470007ECBAA /* Explorer.h */,
+				D5E2DA93181F2470007ECBAA /* Explorer.m */,
+				D5E2DA95181F2669007ECBAA /* Adventurer.h */,
+				D5E2DA96181F2669007ECBAA /* Adventurer.m */,
+				D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */,
+				D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */,
 				D5E2DA91181EE8AB007ECBAA /* noise.h */,
 				D5E2DA78181AE9C6007ECBAA /* noise.c */,
 				D539EFEE1819D8A6002CF2A2 /* Spaceship.png */,
@@ -283,10 +293,12 @@
 			files = (
 				D539EFED1819D8A6002CF2A2 /* MyScene.m in Sources */,
 				D539EFEA1819D8A6002CF2A2 /* ViewController.m in Sources */,
+				D5E2DA97181F2669007ECBAA /* Adventurer.m in Sources */,
 				D539EFE11819D8A6002CF2A2 /* AppDelegate.m in Sources */,
 				D5E2DA81181EDD26007ECBAA /* Bug.m in Sources */,
 				D5E2DA79181AE9C7007ECBAA /* noise.c in Sources */,
 				D5E2DA90181EE5C2007ECBAA /* Dragonfly.m in Sources */,
+				D5E2DA94181F2470007ECBAA /* Explorer.m in Sources */,
 				D539EFDD1819D8A6002CF2A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

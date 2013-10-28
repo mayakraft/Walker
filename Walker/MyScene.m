@@ -9,6 +9,8 @@
 #import "MyScene.h"
 #import "Bug.h"
 #import "Dragonfly.h"
+#import "Explorer.h"
+#import "Adventurer.h"
 
 @interface MyScene (){
     NSMutableArray *walkers;
@@ -31,11 +33,17 @@
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
+        int random = arc4random()%4;
+        NSLog(@"%d",random);
         Bug *walker;
-        if(arc4random()%2)
-            walker = [[Dragonfly alloc] init];
-        else
+        if(random == 0)
             walker = [[Bug alloc] init];
+        else if (random == 1)
+            walker = [[Explorer alloc] init];
+        else if(random == 2)
+            walker = [[Adventurer alloc] init];
+        else
+            walker = [[Dragonfly alloc] init];
         [walker setPosition:location];
         [walkers addObject:walker];
         [self addChild:walker];

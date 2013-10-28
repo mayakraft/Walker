@@ -26,7 +26,7 @@
 @implementation Dragonfly
 
 -(id)init{
-    self = [super initWithTexture:nil color:[UIColor yellowColor] size:CGSizeMake(3, 3)];
+    self = [super initWithTexture:nil color:[UIColor greenColor] size:CGSizeMake(3, 3)];
     if(self){
         STEP = .02f;
         pause = 50;
