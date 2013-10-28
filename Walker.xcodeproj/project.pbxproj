@@ -25,6 +25,9 @@
 		D539EFFA1819D8A6002CF2A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D539EFD21819D8A6002CF2A2 /* UIKit.framework */; };
 		D539F0021819D8A7002CF2A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D539F0001819D8A7002CF2A2 /* InfoPlist.strings */; };
 		D539F0041819D8A7002CF2A2 /* WalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D539F0031819D8A7002CF2A2 /* WalkerTests.m */; };
+		D5E2DA79181AE9C7007ECBAA /* noise.c in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA78181AE9C6007ECBAA /* noise.c */; };
+		D5E2DA81181EDD26007ECBAA /* Bug.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA80181EDD26007ECBAA /* Bug.m */; };
+		D5E2DA90181EE5C2007ECBAA /* Dragonfly.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,12 @@
 		D539EFFF1819D8A7002CF2A2 /* WalkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WalkerTests-Info.plist"; sourceTree = "<group>"; };
 		D539F0011819D8A7002CF2A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D539F0031819D8A7002CF2A2 /* WalkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalkerTests.m; sourceTree = "<group>"; };
+		D5E2DA78181AE9C6007ECBAA /* noise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noise.c; sourceTree = "<group>"; };
+		D5E2DA7F181EDD26007ECBAA /* Bug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bug.h; sourceTree = "<group>"; };
+		D5E2DA80181EDD26007ECBAA /* Bug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bug.m; sourceTree = "<group>"; };
+		D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragonfly.h; sourceTree = "<group>"; };
+		D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragonfly.m; sourceTree = "<group>"; };
+		D5E2DA91181EE8AB007ECBAA /* noise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = noise.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,12 @@
 				D539EFE91819D8A6002CF2A2 /* ViewController.m */,
 				D539EFEB1819D8A6002CF2A2 /* MyScene.h */,
 				D539EFEC1819D8A6002CF2A2 /* MyScene.m */,
+				D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */,
+				D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */,
+				D5E2DA7F181EDD26007ECBAA /* Bug.h */,
+				D5E2DA80181EDD26007ECBAA /* Bug.m */,
+				D5E2DA91181EE8AB007ECBAA /* noise.h */,
+				D5E2DA78181AE9C6007ECBAA /* noise.c */,
 				D539EFEE1819D8A6002CF2A2 /* Spaceship.png */,
 				D539EFF01819D8A6002CF2A2 /* Images.xcassets */,
 				D539EFD71819D8A6002CF2A2 /* Supporting Files */,
@@ -269,6 +284,9 @@
 				D539EFED1819D8A6002CF2A2 /* MyScene.m in Sources */,
 				D539EFEA1819D8A6002CF2A2 /* ViewController.m in Sources */,
 				D539EFE11819D8A6002CF2A2 /* AppDelegate.m in Sources */,
+				D5E2DA81181EDD26007ECBAA /* Bug.m in Sources */,
+				D5E2DA79181AE9C7007ECBAA /* noise.c in Sources */,
+				D5E2DA90181EE5C2007ECBAA /* Dragonfly.m in Sources */,
 				D539EFDD1819D8A6002CF2A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +508,7 @@
 				D539F0091819D8A7002CF2A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D539F00A1819D8A7002CF2A2 /* Build configuration list for PBXNativeTarget "WalkerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +517,7 @@
 				D539F00C1819D8A7002CF2A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
