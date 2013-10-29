@@ -46,6 +46,7 @@
         [walker setPosition:location];
         [walkers addObject:walker];
         [self addChild:walker];
+        [walker initTail];
     }
 }
 

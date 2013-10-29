@@ -15,6 +15,9 @@
     float STEP;
     float velocity[2];
     float acceleration[2];
+
+    NSMutableArray *tail;
+    NSInteger iTail;
 }
 @end
 
@@ -26,6 +29,7 @@
         ty = tx+arc4random()%100/100.0;
         STEP = .02;
         BORDER = 100;
+        [self initTail];
     }
     return self;
 }
@@ -60,5 +64,6 @@
                                 self.position.y + velocity[1]);
     tx+=STEP;
     ty-=STEP;
+    [self incrementTail];
 }
 @end

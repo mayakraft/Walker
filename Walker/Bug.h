@@ -12,4 +12,8 @@
 
 -(void)increment;
 
+//hidden
+-(void) initTail;
+-(void) incrementTail;
+
 @end

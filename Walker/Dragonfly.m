@@ -31,7 +31,7 @@
         STEP = .02f;
         pause = 50;
         maxSpeed = 10.0f;
-        maxDistance = 90;
+        maxDistance = 150;
         maxPause = 100;
     }
     return self;
