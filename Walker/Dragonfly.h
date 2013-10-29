@@ -7,11 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-
 #import "Bug.h"
 
 @interface Dragonfly : Bug
-
--(void)increment;
 
 @end

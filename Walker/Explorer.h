@@ -7,7 +7,6 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-
 #import "Bug.h"
 
 @interface Explorer : Bug

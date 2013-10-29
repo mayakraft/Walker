@@ -35,11 +35,11 @@
     tail = [NSMutableArray array];
     for(int i = 0; i < TAILLENGTH; i++){
         SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithColor:self.color size:CGSizeMake(3, 3)];
-        [sprite setAlpha:i/(float)TAILLENGTH];
+        [sprite setAlpha:0];
         [self.scene addChild:sprite];
+        [sprite setPosition:self.position];
         [tail addObject:sprite];
     }
-
 }
 
 -(void) increment{

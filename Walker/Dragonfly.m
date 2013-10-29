@@ -19,6 +19,9 @@
     float maxSpeed;
     NSInteger maxDistance;
     NSInteger maxPause;
+    
+    NSMutableArray *tail;
+    NSInteger iTail;
 }
 
 @end
@@ -59,6 +62,7 @@
             velocity = CGPointMake(maxSpeed*cosf(angle), maxSpeed*sinf(angle));
         }
     }
+    [self incrementTail];
 }
 
 @end

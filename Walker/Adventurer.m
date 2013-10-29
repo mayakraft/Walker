@@ -29,7 +29,6 @@
         ty = tx+arc4random()%100/100.0;
         STEP = .02;
         BORDER = 100;
-        [self initTail];
     }
     return self;
 }
@@ -43,7 +42,7 @@
         if(acceleration[0] < 0)
             acceleration[0] = -acceleration[0];
     }
-    if(self.position.x > self.scene.size.width-BORDER){
+    else if(self.position.x > self.scene.size.width-BORDER){
         velocity[0]*=.95;
         if(acceleration[0] > 0)
             acceleration[0] = -acceleration[0];
@@ -53,7 +52,7 @@
         if(acceleration[1] < 0)
             acceleration[1] = -acceleration[1];
     }
-    if(self.position.y > self.scene.size.height-BORDER){
+    else if(self.position.y > self.scene.size.height-BORDER){
         velocity[1]*=.95;
         if(acceleration[1] > 0)
             acceleration[1] = -acceleration[1];

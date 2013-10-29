@@ -28,7 +28,6 @@
         tx = arc4random()%100/100.0;
         ty = tx+arc4random()%100/100.0;
         STEP = .02;
-        [self initTail];
     }
     return self;
 }
@@ -36,7 +35,6 @@
 -(void) increment{
     velocity[0] = .05*noise1(tx)*self.scene.size.width;
     velocity[1] = .05*noise1(ty)*self.scene.size.height;
-    
     self.position = CGPointMake(self.position.x + velocity[0],
                                 self.position.y + velocity[1]);
     tx+=STEP;

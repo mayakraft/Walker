@@ -52,7 +52,7 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    for(Dragonfly *walker in walkers){
+    for(Bug *walker in walkers){
         [walker increment];
     }
 }
