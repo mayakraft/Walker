@@ -45,7 +45,7 @@
 -(void) increment{
     self.position = CGPointMake(noise1(tx)*self.scene.size.width + self.scene.size.width/2.0,
                                 noise1(ty)*self.scene.size.height + self.scene.size.height/2.0);
-    tx+=STEP*(arc4random()%100/100.0+1);
+    tx+=STEP;
     ty-=STEP;
     [self incrementTail];
 }

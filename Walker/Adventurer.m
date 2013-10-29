@@ -23,7 +23,7 @@
 
 @implementation Adventurer
 -(id)init{
-    self = [super initWithTexture:nil color:[UIColor colorWithRed:1.0 green:0.4 blue:0.4 alpha:1.0] size:CGSizeMake(3, 3)];
+    self = [super initWithTexture:nil color:[UIColor redColor] size:CGSizeMake(3, 3)];
     if(self){
         tx = arc4random()%100/100.0;
         ty = tx+arc4random()%100/100.0;

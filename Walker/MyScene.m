@@ -24,6 +24,7 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         walkers = [NSMutableArray array];
+        [self setBackgroundColor:[UIColor blackColor]];
     }
     return self;
 }
