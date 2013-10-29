@@ -34,7 +34,6 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         int random = arc4random()%4;
-        NSLog(@"%d",random);
         Bug *walker;
         if(random == 0)
             walker = [[Bug alloc] init];
