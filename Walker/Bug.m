@@ -26,7 +26,7 @@
     if(self){
         tx = arc4random()%100/100.0;
         ty = tx+arc4random()%100/100.0;
-        STEP = .01;
+        STEP = .015;
     }
     return self;
 }
