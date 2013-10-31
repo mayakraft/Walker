@@ -12,9 +12,13 @@
 #import "Explorer.h"
 #import "Adventurer.h"
 
+#define BRIGHT_SPEED .08f
+
 @interface MyScene (){
     NSMutableArray *walkers;
     CGFloat height, width;
+    float bright;
+    NSTimer *timer;
 }
 @end
 
@@ -25,13 +29,13 @@
         /* Setup your scene here */
         walkers = [NSMutableArray array];
         [self setBackgroundColor:[UIColor blackColor]];
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f/7
+                                                 target:self selector:@selector(brightness) userInfo:nil repeats:YES];
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         int random = arc4random()%4;
@@ -49,6 +53,11 @@
         [self addChild:walker];
         [walker initTail];
     }
+}
+
+-(void) brightness{
+    bright+=BRIGHT_SPEED;
+    [[UIScreen mainScreen] setBrightness:(1+cosf(bright))/10*3+.4];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
