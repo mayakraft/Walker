@@ -57,7 +57,7 @@
 
 -(void) brightness{
     bright+=BRIGHT_SPEED;
-    [[UIScreen mainScreen] setBrightness:(1+cosf(bright))/10*3+.4];
+    [[UIScreen mainScreen] setBrightness:(1+cosf(bright))/10*3+.4];  //between .4 and 1.0
 }
 
 -(void)update:(CFTimeInterval)currentTime {
