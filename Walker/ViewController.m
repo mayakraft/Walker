@@ -22,8 +22,6 @@
     SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
-    [[UIScreen mainScreen] setBrightness:0.5];
-    
     // Present the scene.
     [skView presentScene:scene];
 }
