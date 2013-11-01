@@ -11,14 +11,15 @@
 #import "Dragonfly.h"
 #import "Explorer.h"
 #import "Adventurer.h"
+#import "noise.h"
 
-#define BRIGHT_SPEED .08f
+#define BRIGHT_SPEED .02f
 
 @interface MyScene (){
     NSMutableArray *walkers;
     CGFloat height, width;
     float bright;
-    NSTimer *timer;
+//    NSTimer *timer;
 }
 @end
 
@@ -29,8 +30,8 @@
         /* Setup your scene here */
         walkers = [NSMutableArray array];
         [self setBackgroundColor:[UIColor blackColor]];
-        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f/7
-                                                 target:self selector:@selector(brightness) userInfo:nil repeats:YES];
+//        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f/7
+//                                                 target:self selector:@selector(brightness) userInfo:nil repeats:YES];
     }
     return self;
 }
@@ -57,7 +58,8 @@
 
 -(void) brightness{
     bright+=BRIGHT_SPEED;
-    [[UIScreen mainScreen] setBrightness:(1+cosf(bright))/10*3+.4];  //between .4 and 1.0
+    [[UIScreen mainScreen] setBrightness:.7+noise1(bright)];
+    NSLog(@"Bright: %f",.7+noise1(bright));
 }
 
 -(void)update:(CFTimeInterval)currentTime {
