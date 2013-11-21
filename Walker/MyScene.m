@@ -10,6 +10,7 @@
 #import "Bug.h"
 #import "Dragonfly.h"
 #import "Explorer.h"
+#import "Orbiter.h"
 #import "Adventurer.h"
 #import "noise.h"
 
@@ -39,7 +40,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        int random = arc4random()%4;
+        int random = arc4random()%5;
         Bug *walker;
         if(random == 0)
             walker = [[Bug alloc] init];
@@ -47,8 +48,10 @@
             walker = [[Explorer alloc] init];
         else if(random == 2)
             walker = [[Adventurer alloc] init];
-        else
+        else if(random == 3)
             walker = [[Dragonfly alloc] init];
+        else
+            walker = [[Orbiter alloc] init];
         [walker setPosition:location];
         [walkers addObject:walker];
         [self addChild:walker];

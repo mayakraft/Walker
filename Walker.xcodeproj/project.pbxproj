@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D538F27F183D761300E3792A /* Orbiter.m in Sources */ = {isa = PBXBuildFile; fileRef = D538F27E183D761300E3792A /* Orbiter.m */; };
 		D539EFCF1819D8A6002CF2A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D539EFCE1819D8A6002CF2A2 /* Foundation.framework */; };
 		D539EFD11819D8A6002CF2A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D539EFD01819D8A6002CF2A2 /* CoreGraphics.framework */; };
 		D539EFD31819D8A6002CF2A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D539EFD21819D8A6002CF2A2 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D538F27D183D761300E3792A /* Orbiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orbiter.h; sourceTree = "<group>"; };
+		D538F27E183D761300E3792A /* Orbiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orbiter.m; sourceTree = "<group>"; };
 		D539EFCB1819D8A6002CF2A2 /* Walker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D539EFCE1819D8A6002CF2A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D539EFD01819D8A6002CF2A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +155,8 @@
 				D5E2DA93181F2470007ECBAA /* Explorer.m */,
 				D5E2DA95181F2669007ECBAA /* Adventurer.h */,
 				D5E2DA96181F2669007ECBAA /* Adventurer.m */,
+				D538F27D183D761300E3792A /* Orbiter.h */,
+				D538F27E183D761300E3792A /* Orbiter.m */,
 				D5E2DA8E181EE5C2007ECBAA /* Dragonfly.h */,
 				D5E2DA8F181EE5C2007ECBAA /* Dragonfly.m */,
 				D5E2DA91181EE8AB007ECBAA /* noise.h */,
@@ -296,6 +301,7 @@
 				D5E2DA97181F2669007ECBAA /* Adventurer.m in Sources */,
 				D539EFE11819D8A6002CF2A2 /* AppDelegate.m in Sources */,
 				D5E2DA81181EDD26007ECBAA /* Bug.m in Sources */,
+				D538F27F183D761300E3792A /* Orbiter.m in Sources */,
 				D5E2DA79181AE9C7007ECBAA /* noise.c in Sources */,
 				D5E2DA90181EE5C2007ECBAA /* Dragonfly.m in Sources */,
 				D5E2DA94181F2470007ECBAA /* Explorer.m in Sources */,
