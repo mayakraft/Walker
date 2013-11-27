@@ -42,7 +42,7 @@
     acceleration = .01*noise1(ta);
     velocity += acceleration;
     coords[0] += velocity;
-    coords[1] = radius+radius*.1*noise1(td);
+    coords[1] = radius+radius*.25*noise1(td);
     self.position = CGPointMake(center.x + coords[1]*sinf(coords[0]),
                                 center.y + coords[1]*cosf(coords[0]));
     ta+=STEP;
